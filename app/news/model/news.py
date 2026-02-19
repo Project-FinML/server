@@ -8,3 +8,4 @@ class News(Base):
     title = Column(String(128), nullable=False)   # 뉴스 제목
     content = Column(String(512))                 # 뉴스 내용
     author = Column(String(128))
+    image_url = Column(String(256), nullable=True)            # 뉴스 이미지 URL
